@@ -1,0 +1,12 @@
+h1{
+    font-family: 'Anton', sans-serif;
+    background-color:yellow;
+}
+
+body{
+    background-image: url("https://www.xtrafondos.com/wallpapers/star-wars-logo-3654.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
