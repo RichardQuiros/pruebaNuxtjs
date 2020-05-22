@@ -21,7 +21,7 @@ export default {
     async created(){
         try {
              const res = await axios.get('https://swapi.dev/api/')
-       // this.tipos = res.data;
+        this.tipos = res.data;
         console.log(res.data);
         } catch (error) {
             //console.log(error);
