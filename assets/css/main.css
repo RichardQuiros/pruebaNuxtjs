@@ -1,12 +1,194 @@
-h1{
-    font-family: 'Anton', sans-serif;
-    background-color:yellow;
-}
 
 body{
-    background-image: url("https://www.xtrafondos.com/wallpapers/star-wars-logo-3654.jpg");
+    background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.footer{
+    background-image: url(~assets/svg/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    }
+ .foot{
+    position: relative;
+  
+    }
+
+    
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #ffc107;
+    background-color: #6c757d;
+    border: 0.5px solid #ffffff;
+  }
+  
+  .page-item.disabled .page-link {
+    color: #ffc107;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #6c757d;
+    border-color: #ffffff;
+  }
+  
+   
+  
+  
+  .page-item.active .page-link {
+    z-index: 1;
+    color: #6c757d;
+    background-color: #ffc107;
+    border-color: #fff;
+  }
+  
+
+  .page-link:focus, .page-link:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #6c757d;
+    border-color: #ffc107;
+  }
+
+  .bg {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: .25s;
+  pointer-events: none;
+}
+
+.styleS{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #1670f0;
+    padding: 30px 60px;
+    font-size: 30px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.69) ;
+    overflow: hidden;
+}
+
+.styleS:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 50%;
+    background: rbg(255,255,255,0.05);
+}
+
+.styleS span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right,#0c002b21,#1779ff,#0c002b21);
+    animation:  animated1 2s linear infinite paused;
+}
+@keyframes animated1 {
+    0%
+    {
+        transform: translateX(-100%);
+    }
+    100%
+     {
+         transform: translateX(100%);
+
+    }
+} 
+
+.styleS span:nth-child(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to bottom,#0c002b21,#1779ff,#0c002b21);
+    animation:  animated2 2s linear infinite paused;
+}
+@keyframes animated2 {
+    0%
+    {
+        transform: translateyY(-100%);
+    }
+    100%
+    {
+        transform: translateY(100%);
+
+   }
+} 
+
+.styleS span:nth-child(3){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left,#0c002b21,#1779ff,#0c002b21);
+    animation:  animated1 2s linear infinite paused;
+}
+@keyframes animated3 {
+    0%
+    {
+        transform: translateX(100%);
+    }
+    100%
+     {
+         transform: translateX(-100%);
+
+    }
+} 
+
+.styleS span:nth-child(4){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top,#0c002b21,#1779ff,#0c002b21);
+    animation:  animated2 2s linear infinite paused;
+}
+@keyframes animated4 {
+    0%
+    {
+        transform: translateyY(100%);
+    }
+    100%
+    {
+        transform: translateY(-100%);
+
+   }
+} 
+
+.styleS:hover span:nth-child(1),
+.styleS:hover span:nth-child(2),
+.styleS:hover span:nth-child(3),
+.styleS:hover span:nth-child(4)
+{
+ animation-play-state: running  ;
+}
+
+.starwarsButton:hover ~ .bg {
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, 0.52), #343a40 ),
+    url('https://i.pinimg.com/originals/71/7d/40/717d40f0cbbd926d392a7334c60db086.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+  
 }
+ 
